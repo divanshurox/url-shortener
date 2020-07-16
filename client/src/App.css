@@ -1,0 +1,29 @@
+body{
+    background-color: #262626;
+    color: #56bc58;
+}
+
+h1{
+    font-size: 4.5rem;
+    font-family: 'Ranchers', cursive;
+}
+
+.App{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+:focus{outline: none;}
+
+.col-3{position: relative; left: 420px;float: left; width: 100%; margin: 40px auto; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{ font: 15px/24px "Lato", Arial, sans-serif; color: white; width: 100%; box-sizing: border-box; letter-spacing: 1px; background-color: #262626;}
+
+.effect-2{border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;}
+
+.effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #56bc58; transition: 0.4s;}
+.effect-2:focus ~ .focus-border{width: 100%; transition: 0.4s; left: 0;}
